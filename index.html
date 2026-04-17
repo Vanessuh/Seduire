@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Seduire</title>
+<link rel="icon" type="image/x-icon" href="IMG/website-logo.png">
+<meta name="description" content="Seduire Chocolates and Delicacies">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="CSS/style.css" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Cal Sans' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="promo">
+        <p>Free Standard Shipping on Orders $50+ Code: FREE</p>
+    </div>
+
+    <div class="nav" id="nav">
+        <div class="nav-logo">
+            <img src="IMG/Seduire-logo_Horizontal - Black.png" alt="">
+        </div>
+
+        <div class="nav-buttons">
+            <ol>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="">PRODUCTS</a></li>
+            <li><a href="">ABOUT</a></li>
+            </ol>
+        </div>
+
+    </div>
+    
+
+    <section id="hero">
+
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+        <div class="hero-butt-1">
+        <button>Discover</button>
+        </div>
+        <img src="IMG/hero1.jpg">
+        <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+        <img src="IMG/hero2.jpg">
+        <div class="hero-butt-2">
+        <button>Discover</button>
+        </div>
+        <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+        <img src="IMG/hero3.jpg">
+        <div class="hero-butt-3">
+        <button>Learn More</button>
+        </div>
+        <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+
+
+    </section>
+
+
+    <section id="main">
+
+        <div class="spring-header">
+            <h1>DUBAI CHOCOLATE SERIES</h1>
+            <button>Shop Now</button>
+        </div>
+
+        <div class="collection-gallery">
+            <div class="collection-item">
+                <img src="IMG/dubai-mock.jpg" alt="">
+                <div class="overlay">
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="collection-item">
+                <img src="IMG/dubai-mock-bar.jpg" alt="">
+                <div class="overlay">
+                    <img src="IMG/dubai-mock-bar-open.jpg" alt="">
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="collection-item">
+                <img src="IMG/dubai-mock.jpg" alt="">
+                <div class="overlay">
+                    <img src="IMG/dubai-mock-open.jpg" alt="">
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+    <div class="footer">
+
+        <div class="footer-flex">
+            <div class="footer-logo">
+                <img src="IMG/Seduire-logo_Vertical - White.png" alt="">
+            </div>
+
+            <div class="footer-nav">
+            <ol>
+                <li><h3>RESOURCES</h3></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+            </ol>
+            </div>
+
+            <div class="footer-company">
+            <ol>
+                <li><h3>COMPANY</h3></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">FAQs</a></li>
+            </ol>
+            </div>
+
+            <div class="footer-social">
+                <h3>FOLLOW US</h3>
+                <a href=""><img src="IMG/instagram.png" alt=""></a>
+                <a href=""><img src="IMG/video.png" alt=""></a>
+            </div>
+
+            <div class="footer-news">
+                <h3>STAY UPDATED</h3>
+                <p>Receive Newsletters and Coupons!</p>
+                <form action=""><br>
+                <input type="text" onfocus="this.value=''" id="email" name="email" value="Email Address"><br><br>
+                <input type="submit" id="submit" value="Submit">
+                </form>
+            </div>
+
+        </div>
+
+       
+    </div>
+
+        <div class="copyright">
+        <p>copyright 2026 © Seduire</p>
+        </div>
+
+<script>
+let slideIndex = 1;
+let slideTimer;
+
+// Initialize slideshow
+showSlides(slideIndex);
+startAutoSlide();
+
+// Manual controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+  resetAutoSlide();
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+  resetAutoSlide();
+}
+
+// Core slideshow function
+function showSlides(n) {
+  const slides = document.getElementsByClassName("mySlides");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  // Hide all slides
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  // Show the active slide
+  slides[slideIndex - 1].style.display = "block";
+}
+
+// Autoplay logic
+function startAutoSlide() {
+  slideTimer = setInterval(() => {
+    slideIndex++;
+    showSlides(slideIndex);
+  }, 4000); // Change slide every 4 seconds
+}
+
+function resetAutoSlide() {
+  clearInterval(slideTimer);
+  startAutoSlide();
+}
+
+</script>
+
+
+</body>
+</html>
