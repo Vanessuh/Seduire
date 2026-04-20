@@ -15,6 +15,17 @@ h3{
     color: rgb(255, 191, 0);
 }
 
+.pop-up{
+    background-color: rgba(0, 0, 0, 0.202);
+    z-index: 100;
+}
+
+.pop-promo{
+    width: 40vw;
+    height: 30vw;
+    display: flex;
+    flex: 1;
+}
 
 .promo{
     height: 2.5vw;
@@ -282,6 +293,7 @@ h3{
     flex-direction: row;
     justify-content: space-between;
     height: inherit;
+    gap: 2vw;
 }
 
 .footer-flex li{
