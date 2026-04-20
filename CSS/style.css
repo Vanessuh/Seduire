@@ -19,7 +19,7 @@ h3{
 .pop-up{
     background-color: rgb(0, 0, 0);
     z-index: 100;
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -30,10 +30,10 @@ h3{
 }
 
 .pop-promo{
-    width: 40vw;
+    width: 30vw;
     height: 30vw;
-    display: flex;
-    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: bisque;
 }
 
@@ -42,6 +42,10 @@ h3{
     height: 2vw;
     background-color: blue;
     color: white;
+}
+
+.pop-content{
+    margin: 3vw;
 }
 
 .promo{
