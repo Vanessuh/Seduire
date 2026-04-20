@@ -30,11 +30,12 @@ h3{
 }
 
 .pop-promo{
-    width: 30vw;
+    width: 10vw;
     height: 30vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: bisque;
+    border: solid 2px gray;
 }
 
 .pop-promo form #email{
@@ -45,7 +46,7 @@ h3{
 }
 
 .pop-content{
-    margin: 3vw;
+    padding: 3vw;
 }
 
 .promo{
