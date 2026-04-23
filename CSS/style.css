@@ -19,6 +19,10 @@ a, button, #submit{
     cursor: pointer;
 }
 
+p{
+    color: black;
+}
+
 .pop-up{
     background-color: rgba(0, 0, 0, 0.421);
     z-index: 100;
@@ -39,6 +43,10 @@ a, button, #submit{
     color: black;
     font-size: 2vw;
     text-decoration: none;
+}
+
+.pop-up img{
+    height: 4vw;
 }
 
 .pop-promo{
@@ -298,8 +306,8 @@ a, button, #submit{
 }
 
 .collection-item{
-    width: 25vw;
-    border: solid 1px lightgray;
+    width: 19vw;
+    height: 17vw;
     position: relative;
     display: flex;
 }
@@ -310,8 +318,17 @@ a, button, #submit{
     align-items: center;
 }
 
+.collection-gallery h3{
+    font-family: 'Inder';
+    color: black;
+    letter-spacing: 0.15vw;
+    font-size: 0.9vw;
+    margin: 0;
+    margin-top: 0.7vw;
+    padding: 0;
+}
+
 .overlay{
-    background-color: white;
     bottom: 100%;
     position: absolute;
     width: 100%;
@@ -325,11 +342,11 @@ a, button, #submit{
 .overlay button{
     background-color: white;
     border: solid 2px black;
-    width: 18vw;
-    height: 4vw;
+    width: 16vw;
+    height: 2.5vw;
     position: absolute;
-    bottom: 10%;
-    right: 15%;
+    bottom: 6%;
+    right: 8%;
     box-shadow: 0px 10px 40px -5px rgba(0, 0, 0, 0.15);
 }
 
@@ -483,6 +500,7 @@ a, button, #submit{
 
 .sale p{
     margin-top: 1.5vw;
+    color: rgb(28, 28, 28);
 }
 
 .sale button{
@@ -502,11 +520,111 @@ a, button, #submit{
     transition: 300ms;
 }
 
+/*-------- ABOUT---------*/
+#about-hero{
+    background-color:  #301E1A;
+    height: 30vw;
+    text-align: center;
+}
+
+#about-hero div{
+    padding: 8vw;
+}
+
+#about-hero h1{
+    font-size: 2.25vw;
+}
+
+#about-hero h1, #about-hero h3,#about-hero p{
+    color: white;
+}
+
+#about-main{
+    margin-left: 10vw;
+    margin-bottom: 5vw;
+}
+
+.member{
+    height: 30vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6vw;
+    position: relative;
+}
+
+.member h3{
+    color: gray;
+    font-family: 'Inder';
+}
+
+.member h1{
+    margin: 0;
+}
+
+.member h2{
+    font-family: 'Cal Sans';
+    margin-top: 1vw;
+    letter-spacing: 0.2vw;
+}
+
+.member a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+
+.member a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    background: linear-gradient(currentColor 0 0) 
+    bottom left/
+    var(--underline-width, 0%) 0.1em
+    no-repeat;
+    padding: 0 .5em 0.15em;
+    text-decoration: none;
+    transition: background-size 0.5s;
+    font-family: 'Cal Sans';
+}
+
+.member a:hover{
+    color: brown; 
+    --underline-width: 100%;
+    transition: 300ms;
+}
+
+
+.member a img{
+    height: 1.5vw;
+}
+
+.member img{
+    height: 100%;
+}
+
+.member li{
+    font-family: 'Inder';
+    margin-top: 0.5vw;
+}
+
+.member .qr{
+    height: 8vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 /*---------FOOTER---------*/
 .footer{
     background-color: #402722;
     height: 16vw;
     padding: 5vw 10vw 5vw 10vw;
+}
+
+.footer h3{
+    color: rgb(255, 225, 0);
 }
 
 .footer-flex{
@@ -551,6 +669,7 @@ a, button, #submit{
     color: white;
     margin: 0;
 }
+
 
 .footer-news #email{
     width: 16vw;
