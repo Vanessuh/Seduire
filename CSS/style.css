@@ -551,6 +551,7 @@ p{
 #about-main{
     margin-bottom: 5vw;
     margin-left: 10vw;
+    background-color: aquamarine;
 }
 
 .member{
@@ -559,6 +560,7 @@ p{
     justify-content: space-between;
     margin-top: 6vw;
     position: relative;
+    background-color: orange;
 }
 
 .member h3{
@@ -623,6 +625,11 @@ p{
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+@media (min-width: 600px) {
+
+
 }
 
 /*---------FOOTER---------*/
