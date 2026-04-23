@@ -1,17 +1,7 @@
-body{
+body, html{
     margin: 0;
   max-width: 100%;
   overflow-x: hidden;
-}
-
-html{
-    margin: 0;
-  max-width: 100%;
-
-}
-
-* {
-  outline: 1px solid transparent;
 }
 
 h1{
