@@ -1,9 +1,7 @@
-body{
+body, html{
     margin: 0;
-}
-
-html{
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1{
@@ -635,6 +633,7 @@ p{
     #about-hero{
         background-color: green;
     }
+
 
 }
 
