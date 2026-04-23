@@ -482,6 +482,10 @@ p{
     transition: 300ms;
 }
 
+#quad{
+    margin-right: 0;
+}
+
 .sale{
     display: flex;
     height: 35vw;
@@ -542,6 +546,7 @@ p{
 #about-main{
     margin-left: 10vw;
     margin-bottom: 5vw;
+    margin-right: 5vw;
     width: 100%;
 }
 
