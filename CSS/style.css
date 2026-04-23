@@ -556,7 +556,7 @@ p{
 .member{
     height: 30vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     margin-top: 6vw;
     position: relative;
 }
