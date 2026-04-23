@@ -623,14 +623,17 @@ p{
     left: 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
 
 .member{
     height: 35vw;
-    flex: 1;
-    flex-direction: row;
-    gap: 5vw;
     background-color: #754e47;
+    justify-content: left;
+    gap: 0;
+}
+
+.member div{
+    width: 40vw;
 }
 
 .member h3{
