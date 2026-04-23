@@ -1,7 +1,13 @@
-body, html{
+body{
     margin: 0;
   max-width: 100%;
   overflow-x: hidden;
+}
+
+html{
+    margin: 0;
+  max-width: 100%;
+
 }
 
 * {
@@ -29,6 +35,11 @@ p{
     color: black;
 }
 
+.pop-box{
+    position: relative;
+    display: flex;
+}
+
 .pop-up{
     background-color: rgba(0, 0, 0, 0.421);
     z-index: 100;
@@ -42,10 +53,10 @@ p{
     align-items: center;
 }
 
-.pop-up a{
+.pop-box a{
     position: absolute;
-    top: 25%;
-    right: 26%;
+    top: 5%;
+    right: 6%;
     color: black;
     font-size: 2vw;
     text-decoration: none;
@@ -561,6 +572,7 @@ p{
     justify-content: space-between;
     margin-top: 6vw;
     position: relative;
+    background-color: blueviolet;
 }
 
 .member h3{
@@ -609,6 +621,7 @@ p{
 
 .member img{
     height: 100%;
+    text-align: right;
 }
 
 .member li{
