@@ -559,10 +559,14 @@ p{
 .member{
     height: 35vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     margin-top: 6vw;
     position: relative;
     background-color: blueviolet;
+}
+
+.member div{
+    width: 40vw;
 }
 
 .member h3{
@@ -573,6 +577,12 @@ p{
 .member h1{
     margin: 0;
 }
+
+hr{
+    margin-right: 17vw;
+}
+
+
 
 .member h2{
     font-family: 'Cal Sans';
