@@ -4,6 +4,10 @@ body, html{
   overflow-x: hidden;
 }
 
+* {
+  outline: 1px solid red;
+}
+
 h1{
     font-family: 'Cal Sans';
     letter-spacing: 0.07em;
