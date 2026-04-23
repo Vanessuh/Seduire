@@ -579,14 +579,10 @@ p{
 }
 
 .member a{
-    text-decoration: none;
     display: flex;
     align-items: center;
     gap: 0.5vw;
-}
 
-
-.member a{
     text-decoration: none;
     color: black;
     font-size: 1.1em;
@@ -627,14 +623,55 @@ p{
     left: 0;
 }
 
-@media only screen and(min-width: 800px) {
-    body{
-        background-color: pink;
-    }
+@media (max-width: 1024px) {
 
-    #about-hero{
-        background-color: green;
-    }
+.member{
+    height: 35vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6vw;
+    position: relative;
+}
+
+.member h3{
+    color: gray;
+    font-family: 'Inder';
+    font-size: 0.75em;
+}
+
+.member h1{
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.member h2{
+    font-family: 'Cal Sans';
+    margin-top: 1vw;
+    letter-spacing: 0.2vw;
+    font-size: 1em;
+}
+
+.member a img{
+    height: 1.5vw;
+}
+
+.member img{
+    height: 100%;
+}
+
+.member li{
+    font-family: 'Inder';
+    margin-top: 0.5vw;
+    font-size: 0.75em;
+}
+
+.member .qr{
+    height: 8vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 
 
 }
