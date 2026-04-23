@@ -9,22 +9,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 <link rel="stylesheet" href="CSS/style.css" type="text/css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Cal Sans' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Inder' rel='stylesheet'>
 </head>
 
 <body>
 
-    <div class="pop-up">
+    
+    <div class="pop-up" id="pop-up" >
+        
+        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
         <div class="pop-promo">
-        <div>
-
+            <img src="IMG/vitor-monthay-Y0hxpwaLgag-unsplash.jpg" alt="">
         </div>
 
         <div class="pop-content">
-            <div class="close-btn">
-            <a href=""><i class="fa fa-close"></i></a>
-            </div>
+            <div>
+            
             <img src="" alt=""> <!--Logo here-->
 
             <h2>UNLOCK</h2>
@@ -35,7 +36,8 @@
             <input type="submit" id="submit" value="REDEEM">
             </form>
 
-            <button>No Thanks</button>
+            <button onclick="closeNav()">No Thanks</button>
+            </div>
         </div>        
         </div>
 
@@ -135,6 +137,100 @@
 
 
     </section>
+    
+    <section id="secondary">
+
+        <div class="secondary-about">
+
+            <img src="IMG/farmer.jpg" alt="">
+            <div class="about-text">
+                <h1>Authentic Fair Trade Chocolate Since 1976</h1>
+                <p>Working closely with farmers in Côte d'Ivoire for 50 years. Producing high quality ethically sourced chocolate.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="tertiary">
+        <h1>OUR OATH TO YOU</h1>
+        <p></p>
+        <div class="qualities">
+
+        <div>
+            <img src="IMG/heart.png" alt="">
+            <h2>OPULENT</h2>
+            <p>Opulence is quiet mastery — richness expressed through balance, depth, and intention. One taste of a perfectly tempered shell reveals the artistry within.</p>
+        </div>
+        <div>
+            <img src="IMG/cocoa-bean.png" alt="">
+            <h2>TEMPTING</h2>
+            <p>Temptation begins with anticipation — the soft gleam of cocoa, the promise of a melt‑away center, the kind of beauty that draws you closer without a word.</p>
+        </div>
+        <div>
+            <img src="IMG/summer.png" alt="">
+            <h2>ARTISINAL</h2>
+            <p>Artistry lives in the smallest gestures — the hand‑rolled finish, the curated ingredients, the devotion to texture. Each truffle is made with care you can feel.</p>
+        </div>
+        <div>
+            <img src="IMG/eye.png" alt="">
+            <h2>IMMERSIVE</h2>
+            <p>A truffle should be an experience — layered, evolving, and sensorial. From the first crack to the final note of flavor, it invites you to slow down and savour.</p>
+        </div>
+
+        </div>
+
+            <h1>FLAVOUR COLLECTIONS</h1>
+        <div class="flavour-collections">
+
+            <div class="col">
+                <div>
+                <img src="IMG/Firefly_closeup milk chocolate truffles white chocolate drizzle 880749.jpg" alt="">
+                </div>
+                <div class="btn-arrow">
+                    <button>MILK</button>
+                  <img src="IMG/arrow.png" alt="" style="height: 1.5vw; width: 1.5vw;">  
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                <img src="IMG/Firefly_closeup of dark chocolate truffles with chocolate powder 275298.jpg" alt="">
+
+                </div>
+                <div class="btn-arrow">
+                
+                <button>DARK</button>
+                <img src="IMG/arrow.png" alt="" style="height: 1.5vw; width: 1.5vw;"> 
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                <img src="IMG/Firefly_closeup of white chocolate truffles with chocolate powder 275298.jpg" alt="">
+
+                </div>
+                <div class="btn-arrow">
+                <button>WHITE</button>
+                <img src="IMG/arrow.png" alt="" style="height: 1.5vw; width: 1.5vw;"> 
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="sale">
+            <div>
+            <h1>SWEET SAVINGS, ELEVATED</h1>
+                <p>Indulge in limited‑time offers crafted for gifting and self‑treating alike. Discover curated truffle assortments wrapped in elegance — now at a price that feels just as delightful.</p>
+                <BUTTon>SHOP SALE</BUTTon>
+            </div>
+            <div class="sale-img">
+                <img src="IMG/Firefly_overhead-view-assorted--chocolate-truffles-402402.jpg" alt="">
+                <img src="IMG/Firefly_overhead-view-assorted--chocolate-truffles-4024021.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
 
 
 
@@ -194,6 +290,7 @@ let slideTimer;
 // Initialize slideshow
 showSlides(slideIndex);
 startAutoSlide();
+//openNav();
 
 // Manual controls
 function plusSlides(n) {
@@ -237,6 +334,21 @@ function startAutoSlide() {
 function resetAutoSlide() {
   clearInterval(slideTimer);
   startAutoSlide();
+}
+
+function closeNav() {
+  document.getElementById("pop-up").style.display = "none";
+}
+
+function openNav(){
+    if (document.getElementById("pop-up").style.display = "none") {
+      
+    navTime = setInterval(() =>{
+
+    document.getElementById("pop-up").style.display = "";
+   
+    }, 10000 );  
+    }
 }
 
 </script>
