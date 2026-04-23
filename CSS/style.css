@@ -627,25 +627,21 @@ p{
 
 .member{
     height: 35vw;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 6vw;
-    position: relative;
+    flex: 1;
+    flex-direction: row;
+    gap: 5vw;
+    background-color: #754e47;
 }
 
 .member h3{
-    color: gray;
-    font-family: 'Inder';
     font-size: 0.75em;
 }
 
 .member h1{
-    margin: 0;
     font-size: 1.5em;
 }
 
 .member h2{
-    font-family: 'Cal Sans';
     margin-top: 1vw;
     letter-spacing: 0.2vw;
     font-size: 1em;
@@ -672,6 +668,9 @@ p{
     left: 0;
 }
 
+.pop-up a{
+    top: 41%;
+}
 
 
 }
