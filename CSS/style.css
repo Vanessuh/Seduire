@@ -627,8 +627,14 @@ p{
     left: 0;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
+    body{
+        background-color: pink;
+    }
 
+    #about-hero{
+        background-color: green;
+    }
 
 }
 
