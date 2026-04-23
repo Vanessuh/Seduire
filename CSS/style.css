@@ -459,6 +459,7 @@ p{
     margin: 5vw 0 5vw 0;
     overflow: hidden;
     position: relative;
+    width: 100%;
 }
 
 .secondary-about img{
@@ -566,6 +567,7 @@ p{
 
 .member{
     height: 30vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 6vw;
