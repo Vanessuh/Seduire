@@ -322,7 +322,6 @@ let slideTimer;
 // Initialize slideshow
 showSlides(slideIndex);
 startAutoSlide();
-openNav();
 
 // Manual controls
 function plusSlides(n) {
@@ -370,17 +369,6 @@ function resetAutoSlide() {
 
 function closeNav() {
   document.getElementById("pop-up").style.display = "none";
-}
-
-function openNav(){
-    if (document.getElementById("pop-up").style.display = "none") {
-      
-    navTime = setInterval(() =>{
-
-    document.getElementById("pop-up").style.display = "";
-   
-    }, 10000 );  
-    }
 }
 
 </script>
